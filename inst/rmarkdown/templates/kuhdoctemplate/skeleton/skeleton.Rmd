@@ -22,11 +22,12 @@ kuhdoctype: "Dokumentin tyyppi"
 
 # Dokumentin tuotannon asetustiedot
 output:
-  pdf_document:
-    fig_caption: true
-    extra_dependencies: ["float"]
-    keep_tex: true
-    template: template.tex
+  kuhdoctemplate::kuh_article
+  #pdf_document:
+  #  fig_caption: true
+  #  extra_dependencies: ["float"]
+  #  keep_tex: true
+  #  template: template.tex
 
 # Lisäksi ladattavat LaTeX paketit tulevat tähän. Oletuksena mukana lipsum paketti.
 header-includes:
