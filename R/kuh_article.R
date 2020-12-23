@@ -43,7 +43,7 @@ kuh_article <- function(toc = FALSE,
 
   template <- find_resource("kuh_article", "template.tex")
 
-  load_resources_if_missing("kuh_article", c("KYS_sin_fi_print_pdf.pdf", "KYS_val_fi_print_pdf.pdf"))
+  load_resources_if_missing("kuh_article", c("kuh.cls", "KYS_sin_fi_print_pdf.pdf", "KYS_val_fi_print_pdf.pdf"))
 
   rmarkdown::beamer_presentation(template = template,
                                  toc = toc,
