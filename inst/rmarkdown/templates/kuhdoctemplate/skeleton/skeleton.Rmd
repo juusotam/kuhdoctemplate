@@ -1,0 +1,62 @@
+---
+# Dokumentin tyylitiedot ja kieli
+documentclass: kuh
+classoption: finnish
+
+# Dokumentin otsikkotiedot. Sähköposti osoite ja puhelinnumero tulee alaviitteeseen.
+# Jos haluat jättää esim, alaotsikon pois, muuta rivi kommentiksi #-merkillä
+title: "Tähän tulee dokumentin otsikko"
+subtitle: "Tähän tulee alaotsikko"
+date: 12. joulukuuta 2020
+author: 
+  - Juuso Tamminen
+  - Toinen kirjoittaja
+email: "juuso.tamminen@kuh.fi"
+telephone: "044 717 2111"
+
+# Sairaalan yksikkö
+unit: "1100K Kehittämis- ja laatuyksikkö"
+
+# Dokumentin tyyppi (esim. Muistio, Esityslista, Esitys jne...)
+kuhdoctype: "Dokumentin tyyppi"
+
+# Dokumentin tuotannon asetustiedot
+output:
+  pdf_document:
+    fig_caption: true
+    extra_dependencies: ["float"]
+    keep_tex: true
+    template: template.tex
+
+# Lisäksi ladattavat LaTeX paketit tulevat tähän. Oletuksena mukana lipsum paketti.
+header-includes:
+  - \usepackage{lipsum}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# First section
+
+\lipsum[1-2]
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE, fig.cap = "Pressure vs. Temperature"}
+plot(pressure)
+```
+
+## Sub section
+
+\lipsum[2-4]
+
+## Another subsection
+
+\lipsum[1-2]

@@ -1,0 +1,10 @@
+Package: kuhdoctemplate
+Type: Package
+Title: Kuopio University Hospital document template
+Version: 0.1.0
+Author: Juuso Tamminen
+Maintainer: Juuso Tamminen <juuso.tamminen@kuh.fi>
+Description: Kuopio University Hospital document template to use for different kind of official documents.
+License: GPL v3
+Encoding: UTF-8
+LazyData: true
