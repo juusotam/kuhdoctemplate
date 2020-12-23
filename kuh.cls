@@ -108,7 +108,7 @@
 	}
 	\rfoot{
 	\begin{minipage}{0.2\textwidth}
-		%\includegraphics[height=2cm]{pictures/Asset1}
+		\includegraphics[height=2cm]{pictures/Asset1}
 	\end{minipage}
 	}
 }
@@ -122,7 +122,7 @@
    \renewcommand{\headrulewidth}{0pt}
    \lhead{
 	\begin{minipage}{0.2\textwidth}
-		\includegraphics[height=2cm]{KYS_sin_fi_print_pdf}
+		\includegraphics[height=2cm]{pictures/KYS_sin_fi_print_pdf}
 	\end{minipage}
 	\begin{minipage}{0.6\textwidth}
 		\sffamily\small{\textbf{Pohjois-Savon sairaanhoitopiiri}\\
