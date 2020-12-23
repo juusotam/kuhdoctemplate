@@ -129,10 +129,14 @@
 		\@unit \\
 		\theauthor}
 	\end{minipage}
-   }
-   \rhead{\sffamily\small{\textbf{\@kuhdoctype} \\
-   \@kuhdate \\
-   Sivu: \thepage}}
+  }
+  \rhead{
+  \begin{minipage}{0.2\textwidth}
+    \sffamily\small{\textbf{\@kuhdoctype} \\
+    \@kuhdate \\
+    Sivu: \thepage}
+  \end{minipage}
+  }
    \lfoot{}
    \cfoot{}
    \rfoot{\sffamily\footnotesize{Puhelin: \@kuhtelephone\\
