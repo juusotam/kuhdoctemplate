@@ -24,8 +24,8 @@
 #' rmarkdown::render("slide_deck/slide_deck.Rmd")
 #' }
 kuh_article <- function(toc = FALSE,
-                       slide_level = 2,
-                       incremental = FALSE,
+                        toc_depth = 2,
+                        number_sections = FALSE,
                        fig_width = 10,
                        fig_height = 7,
                        fig_crop = TRUE,
@@ -34,34 +34,39 @@ kuh_article <- function(toc = FALSE,
                        df_print = "default",
                        fonttheme = "default",
                        highlight = "default",
-                       keep_tex = FALSE,
+                       keep_tex = TRUE,
                        latex_engine = "xelatex",
                        citation_package = c("default", "natbib", "biblatex"),
                        includes = NULL,
                        md_extensions = NULL,
-                       pandoc_args = NULL){
+                       output_extensions = NULL,
+                       pandoc_args = NULL,
+                       extra_dependencies = NULL){
 
   template <- find_resource("kuh_article", "template.tex")
 
   load_resources_if_missing("kuh_article", c("kuh.cls", "KYS_sin_fi_print_pdf.pdf", "KYS_val_fi_print_pdf.pdf"))
 
-  rmarkdown::pdf_document(template = template,
-                                 toc = toc,
-                                 slide_level = slide_level,
-                                 incremental = incremental,
-                                 fig_width = fig_width,
-                                 fig_height = fig_height,
-                                 fig_crop = fig_crop,
-                                 fig_caption = fig_caption,
-                                 dev = dev,
-                                 df_print = df_print,
-                                 fonttheme = fonttheme,
-                                 highlight = highlight,
-                                 keep_tex = keep_tex,
-                                 latex_engine = latex_engine,
-                                 citation_package = citation_package,
-                                 includes = includes,
-                                 md_extensions = md_extensions,
-                                 pandoc_args = pandoc_args)
+  rmarkdown::pdf_document(
+    toc = toc,
+    toc_depth = toc_depth,
+    number_sections = number_sections,
+    fig_width = fig_width,
+    fig_height = fig_height,
+    fig_crop = fig_crop,
+    fig_caption = fig_caption,
+    dev = dev,
+    df_print = df_print,
+    highlight = highlight,
+    template = template,
+    keep_tex = keep_tex,
+    latex_engine = latex_engine,
+    citation_package = citation_package,
+    includes = includes,
+    md_extensions = includes,
+    output_extensions = output_extensions,
+    pandoc_args = pandoc_args,
+    extra_dependencies = extra_dependencies
+  )
 
 }
