@@ -131,8 +131,8 @@
 	\end{minipage}
    }
    \rhead{\sffamily\small{\textbf{\@kuhdoctype} \\
-   \@kuhdate} \\
-   Sivu: \thepage}
+   \@kuhdate \\
+   Sivu: \thepage}}
    \lfoot{}
    \cfoot{}
    \rfoot{\sffamily\footnotesize{Puhelin: \@kuhtelephone\\
