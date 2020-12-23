@@ -108,7 +108,7 @@
 	}
 	\rfoot{
 	\begin{minipage}{0.2\textwidth}
-		%\includegraphics[height=2cm]{pictures/Asset1}
+		\includegraphics[height=2cm]{Asset1}
 	\end{minipage}
 	}
 }
