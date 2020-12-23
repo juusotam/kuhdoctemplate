@@ -132,7 +132,7 @@
    }
    \rhead{\sffamily\small{\textbf{\@kuhdoctype} \\
    \@kuhdate}}
-   \lfoot{}
+   \lfoot{\thepage}
    \cfoot{}
    \rfoot{\sffamily\footnotesize{Puhelin: \@kuhtelephone\\
    \@kuhemail\\
