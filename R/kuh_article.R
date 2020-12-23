@@ -35,7 +35,7 @@ kuh_article <- function(toc = FALSE,
                        fonttheme = "default",
                        highlight = "default",
                        keep_tex = FALSE,
-                       latex_engine = "pdflatex",
+                       latex_engine = "xelatex",
                        citation_package = c("default", "natbib", "biblatex"),
                        includes = NULL,
                        md_extensions = NULL,
@@ -45,7 +45,7 @@ kuh_article <- function(toc = FALSE,
 
   load_resources_if_missing("kuh_article", c("kuh.cls", "KYS_sin_fi_print_pdf.pdf", "KYS_val_fi_print_pdf.pdf"))
 
-  rmarkdown::beamer_presentation(template = template,
+  rmarkdown::pdf_document(template = template,
                                  toc = toc,
                                  slide_level = slide_level,
                                  incremental = incremental,
