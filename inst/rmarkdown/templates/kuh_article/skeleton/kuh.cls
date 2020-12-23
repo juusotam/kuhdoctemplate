@@ -108,7 +108,7 @@
 	}
 	\rfoot{
 	\begin{minipage}{0.2\textwidth}
-		\includegraphics[height=2cm]{Asset1}
+		\includegraphics[height=2cm]{KYS_val_fi_print_pdf}
 	\end{minipage}
 	}
 }
