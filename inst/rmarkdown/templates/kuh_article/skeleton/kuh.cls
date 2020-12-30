@@ -19,6 +19,7 @@
 \RequirePackage{marginnote,calc,kantlipsum}
 \RequirePackage[tabular,lining]{montserrat}
 \RequirePackage{fancyhdr}
+\RequirePackage{lastpage}
 
 \newlength{\myoddoffset}
 \setlength{\myoddoffset}{\marginparwidth + \marginparsep}
@@ -131,10 +132,10 @@
 	\end{minipage}
   }
   \rhead{
-  \begin{minipage}{0.2\textwidth}
+  \begin{minipage}{0.3\textwidth}
     \sffamily\small{\textbf{\@kuhdoctype} \\
     \@kuhdate \\
-    Sivu: \thepage}
+    Sivu: \thepage\ / \pageref{LastPage}}
   \end{minipage}
   }
    \lfoot{}

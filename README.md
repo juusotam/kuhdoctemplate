@@ -4,7 +4,7 @@ Dokumenttipohja jota voi käyttää muistioissa, esityslistoissa, raporteissa jn
 
 ## Vaatimukset
 
-R, RStudio ja LaTeX asennukset.
+R, RStudio ja LaTeX asennukset. Windows ympäristössä suositellaan käyttämään TeX-Live asennusta. R ympäristön vaatimuksena `tinytex` paketti.
 
 ## Asennus
 
